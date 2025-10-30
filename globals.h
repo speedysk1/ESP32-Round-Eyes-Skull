@@ -101,4 +101,11 @@ extern void user_setup(void);
 extern void user_loop(void);
 extern void split(int16_t startValue, int16_t endValue, uint32_t startTime, int32_t duration, int16_t range);
 
+// OTA function declarations (when enabled)
+#ifdef ENABLE_OTA
+extern void setupOTA(void);
+extern void handleOTA(void);
+extern bool ota_in_progress;
+#endif
+
 #endif // GLOBALS_H

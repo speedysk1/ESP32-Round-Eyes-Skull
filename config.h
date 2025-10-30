@@ -44,6 +44,14 @@
 #define DISPLAY_BACKLIGHT  -1 // Pin for backlight control (-1 for none)
 #define BACKLIGHT_MAX    255
 
+// OTA/WiFi SETTINGS -------------------------------------------------------
+// Enable OTA updates (comment out to disable)
+#define ENABLE_OTA
+
+// WiFi credentials (change these to your network settings)
+#define WIFI_SSID "YourWiFiSSID"         // Replace with your WiFi network name
+#define WIFI_PASSWORD "YourWiFiPassword" // Replace with your WiFi password
+
 // EYE LIST ----------------------------------------------------------------
 #define NUM_EYES 2 // Number of eyes to display (1 or 2)
 

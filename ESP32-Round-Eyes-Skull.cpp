@@ -35,6 +35,10 @@ bool dmaBuf = 0;
 #include "globals.h"    // Include shared types and declarations first
 #include "config.h"     // ****** CONFIGURATION IS DONE IN HERE ******
 
+#ifdef ENABLE_OTA
+#include "ota_update.h" // OTA update functionality
+#endif
+
  // functions in the user*.cpp files, please enable one
 extern void user_setup(void);
 extern void user_loop(void);
@@ -69,6 +73,11 @@ void setup() {
   // IMPORTANT: Call initEyes() before tft.init() to set up CS pins and avoid display conflicts (see hardware integration notes)
   initEyes();
 
+#ifdef ENABLE_OTA
+  // Setup OTA updates after hardware initialization
+  setupOTA();
+#endif
+
   Serial.println("initialising displays");
   tft.init();
 
@@ -96,6 +105,20 @@ void setup() {
 }
 
 void loop() {
+  // Handle OTA updates (only when not in progress to avoid interfering with eye rendering)
+#ifdef ENABLE_OTA
+  if (!ota_in_progress) {
+    handleOTA();
+  }
+#endif
+  
+  // Skip eye updates during OTA to prevent conflicts
+#ifdef ENABLE_OTA
+  if (!ota_in_progress) {
+    updateEye();
+  }
+#else
   updateEye();
+#endif
   // use user_loop, do not add things here
 }
