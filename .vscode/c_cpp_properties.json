@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/data",
+                "C:/Users/Shawn Kummrow/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
+                "C:/Users/Shawn Kummrow/.platformio/packages/framework-arduinoespressif32/variants/doitESP32devkitV1"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Tools\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

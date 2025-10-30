@@ -37,16 +37,9 @@
 #define TFT_SCLK 18  // SCL/SCK/CLK
 #define TFT1_CS  15  // TFT1 Chip select control pin
 #define TFT2_CS  5   // TFT2 Chip select control pin
-#define TFT_DC    2  // DC/AO Data Command control pin
-#define TFT_RST   4  // Reset pin (could connect to RST pin)
-
-// #define TFT_MOSI 11  // SDA 
-// #define TFT_MISO 9  // NOT USED
-// #define TFT_SCLK 7  // SCL
-// #define TFT1_CS  12  // Chip select control pin
-// #define TFT2_CS  13  // Chip select control pin
-// #define TFT_DC    2  // DC Data Command control pin
-// #define TFT_RST   4  // Reset pin (could connect to RST pin)
+#define TFT_DC   2   // DC/AO Data Command control pin
+#define TFT_RST  4   // Reset pin (could connect to RST pin)
+#define TOUCH_CS -1  // Touch chip select control pin
 
 #define DISPLAY_BACKLIGHT  -1 // Pin for backlight control (-1 for none)
 #define BACKLIGHT_MAX    255
