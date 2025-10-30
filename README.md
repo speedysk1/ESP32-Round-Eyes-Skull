@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Uncanny eyes Halloween skull
 
 Build a Halloween skull with living eyes and moving jaw.
@@ -100,6 +99,3 @@ Once done…
 1. secure the cables with hot glue if needed, so that only USB power supply exits the skull
 2. tidy up so that the wires do not interfere with the servo arm
 3. close the skull
-=======
-# ESP32-Round-Eyes-Skull
->>>>>>> 9b332c7c9096b047b0de62448c6084bef466691e
