@@ -1,5 +1,9 @@
 // Code adapted to run with TFT_eSPI compatible processor on ESP32,
 // running on two 240x240 TFT displays.
+#include <Arduino.h>
+#include <cstdint>
+#include "globals.h"
+// Don't include config.h here to avoid multiple definitions of eye data
 
 //--------------------------------------------------------------------------
 // Uncanny eyes for Adafruit 1.5" OLED (product #1431) or 1.44" TFT LCD
