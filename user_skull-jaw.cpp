@@ -1,6 +1,6 @@
 // enable for skull with jaw servo
 
-#if 1  // change to 0 to disable this code
+#if 0  // change to 0 to disable this code
 
 #include <ESP32Servo.h>
 Servo servo;
